@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Блокиратор спама</title>
+  <meta charset="utf-8">
+  <script src="https://apis.google.com/js/api.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet" type="text/css">
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css" rel="stylesheet">
+  <link href="style.css" rel="stylesheet">
+  <link href="animate/animate.css" rel="stylesheet">
+  <script src="animate/wow.min.js"></script>
+  <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.css" type="text/css">
+</head>
+
+<body>
+  <header>
+    <div class="top">
+      <img class="block wow fadeInRight" data-wow-duration="1s" src="pic/gmail.png" alt="mail">
+      <div class="block wow fadeInRight" data-wow-duration="1s">
+        <h1>SpamBlock</h1>
+      </div>
+    </div>
+
+  </header>
+  <main>
+
+    <p id="Main_text" class="mainText">Данная программа предназначена для блокировки спама. Для того чтобы начать работу
+      с расширением войдите в свой аккаунт или создайте новый.</p>
+    <div class="buttons">
+      <button id="signin" class="block wow bounceInDown" data-wow-duration="1s">Sign in</button>
+      <button id="logout" style="display: none" class="block wow bounceInDown" data-wow-duration="1s">Log out</button>
+    </div>
+
+  </main>
+  <footer>
+    <div class="thirdPart">
+      <nav class="menu">
+        <ul>
+          <li><button id="contactButton"><i class="fa fa-info-circle"></i>Сontact</button></li>
+          <li><button id="blackListButton"><i class="fa fa-ban"></i>Blacklist</button></li>
+          <li><button id="statsButton"><i class="fa fa-history"></i>Statistics</button></li>
+        </ul>
+      </nav>
+    </div>
+    <div id="firstPopup" class="contactMenu" style="display:none">
+      <!-- <span class="close1">&times;</span> -->
+      <a href="https://vk.com/mefja" target="_blank">Сизов Илья</a>
+      <a href="https://vk.com/idsouthsidesuicide" target="_blank">Гуров Максим</a>
+      <a href="https://vk.com/id145759719" target="_blank">Шамаева Елизавета</a>
+    </div>
+    <div id="secondPopup" class="blackListMenu" style="display:none">
+      <!-- <span class="close2">&times;</span> -->
+      <input type="text" id="add" placeholder="пользователь"><button id="addBut">добавить</button>
+      <input type="text" id="delete" placeholder="пользователь"><button id="delBut">удалить</button>
+      <button id="showButAll">показать весь список</button>
+      <button id="delButAll">удалить весь список</button>
+    </div>
+    <div id="thirdPopup" class="statsMenu" style="display:none">
+      <!-- <span class="close3">&times;</span> -->
+      <p id="stats2_text" class="stat2Text">Всего сообщений обработано : 0</p>
+      <p id="stats1_text" class="stat1Text">Добавлено сообщений в спам : 0</p>
+    </div>
+    <div id="fourPopup" class="page-switch" style="display:none">
+      <div id="toggleButton" class="toggle-button">
+        <div class="inner-circle"></div>
+      </div>
+      <p id="switch">Нажмите чтобы включить защиту</p>
+    </div>
+
+  </footer>
+  <script src="myscript/ms.js"></script>
+</body>
+
+</html>
